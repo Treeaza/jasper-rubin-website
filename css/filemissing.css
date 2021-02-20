@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+* {
+	font-family: 'Spartan', sans-serif;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 200px;
+}
+
+.back-button {
+	width: 500px;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+footer {
+	position: fixed;
+	bottom: -50px;
+	width: 100%;
+	font-family: 'Spartan', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	padding: 20px 10px 10px 10px;
+	transition-duration: 0.5s;
+	z-index: 20;
+}
+
+footer:hover {
+	padding-top: 10px;
+	transform: translateY(-50px);
+}
+
+.accent-background-color {
+	background-color: cornflowerBlue;
+}
+
+#logo {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	box-shadow: inset 0 0 20px black;
+	background-color: cornflowerBlue;
+}
+
+a {
+	color: cornflowerblue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: coral;
+}
+
+.hidden-link {
+	color: black;
+}
+
+button {
+	border-color: cornflowerblue;
+	background-color: white;
+	padding: 5px 10px 5px 10px;
+	border-radius: 20px;
+	font-family: 'Spartan', sans-serif;
+	font-size: 16pt;
+	cursor: pointer;
+	outline: none;
+}
+
+button:hover {
+	border-color: coral;
+	background-color: white;
+	padding: 5px 10px 5px 10px;
+	border-radius: 20px;
+	font-family: 'Spartan', sans-serif;
+	font-size: 16pt;
+	cursor: pointer;
+}
+
+button:active {
+	border-color: coral;
+	background-color: rgba(230, 240, 255, 1);
+	padding: 5px 10px 5px 10px;
+	border-radius: 20px;
+	font-family: 'Spartan', sans-serif;
+	font-size: 16pt;
+	cursor: pointer;
+}

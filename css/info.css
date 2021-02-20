@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+html {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+body {
+	background-color: white;
+	background-image: url("../images/CircuitBackground.png");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+
+	display: flex;
+	
+	position: absolute;
+	overflow: hidden;
+
+	min-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#cover {
+	pointer-events: none;
+	background-color: white;
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 20;
+
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	header h1 {
+		font-size: 25pt;
+	}
+
+	#logo {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+.no-top-margin {
+	margin-top: 5px;
+}
+
+.no-bottom-margin {
+	margin-bottom: 5px;
+}
+
+.vertical-align {
+	display: flex;
+	align-items: center;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tooltip {
+	position: relative;
+}
+
+.tooltip .tooltip-text {
+	visibility: hidden;
+	background-color: cornflowerblue;
+	text-align: center;
+	padding: 10px 10px 5px 10px;
+	border-radius: 5px;
+	vertical-align: center;
+	font-size: 15pt;
+
+	width: 200px;
+
+	position: absolute;
+	left: 0;
+	bottom: 35px;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+	visibility: visible;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+
+	font-family: 'Spartan', sans-serif;
+	font-size: 17pt;
+	margin: 15px;
+	padding: 0;
+	
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 15% 50% 35%;
+
+	grid-template-areas:
+		"header header"
+		"who contact"
+		"hobbies hobbies";
+}
+
+#logo {
+	margin-right: 30px;
+}
+
+#header {
+	grid-area: header;
+
+	padding: 25px 25px 0px 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	vertical-align: center;
+	margin-bottom: 0;
+}
+
+#header a {
+	color: black;
+}
+
+#header a:hover {
+	color: black;
+}
+
+#header h1 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 600;
+	font-size: 60pt;
+}
+
+#who-am-i {
+	grid-area: who;
+}
+
+#hobbies {
+	grid-area: hobbies;
+}
+
+#contact {
+	grid-area: contact;
+}

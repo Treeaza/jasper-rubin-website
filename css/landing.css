@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+html {
+	height: 100%;
+	font-family: 'Spartan', sans-serif;
+	scroll-behavior: smooth;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+section {
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+	max-height: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: stretch;
+	transition: 2s;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 35pt;
+}
+
+.main-heading {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+	font-size: 20pt;
+}
+
+#choice {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	flex-grow: 1;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.domain {
+	flex: 1	1 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.invisible {
+	display: none;
+}
+
+#choice-creative {
+	background-color: white;
+	background-image: url("../images/CreativeBackground.png");
+	background-image: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%,
+	rgba(255,255,255,0.9) 40%, rgba(255,255,255,0.6) 100%), url("../images/CreativeBackground.png");
+	background-position: right;
+	color: black;
+	padding-right: 120px;
+	text-align: right;
+	box-shadow: inset 0 0 20px black;
+}
+
+#choice-creative a {
+	color: black;
+}
+
+#choice-creative a:hover {
+	color: black;
+}
+
+#choice-technical a {
+	color: white;
+}
+
+#choice-technical a:hover {
+	color: white;
+}
+
+h2 {
+	font-family: 'Spartan', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#choice-technical {
+	background-color: black;
+	background-image: url("../images/TechnicalBackground.png");
+	background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%,
+	rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.6) 100%), url("../images/TechnicalBackground.png");
+	color: white;
+	padding-left: 120px;
+}
+
+#logo {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	box-shadow: inset 0 0 20px black, 0 0 20px black;
+}
+
+#about-me-link {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: 120px;
+	margin-left: -70px;
+	width: 150px;
+	height: 35px;
+	text-align: center;
+	z-index: 1;
+}
+
+#blog-link {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: 165px;
+	margin-left: -70px;
+	width: 150px;
+	height: 35px;
+	text-align: center;
+	z-index: 1;
+}
+
+#creative {
+	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	left: -100%;
+}
+
+.page-sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	text-align: center;
+	vertical-align: center;
+
+}
+
+#creative-sidebar {
+	right: 0;
+}
+
+#technical-sidebar {
+	left: 0;
+}
+
+#creative-sidebar a {
+	color: black;
+}
+
+#creative-sidebar a:hover {
+	color: black;
+}
+
+.navigation {
+	padding: 20px;
+	font-size: 16pt;
+	min-height: 100%;
+	max-height: 100%;
+	width: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+	.navigation {
+		width: 15%;
+	}
+}
+
+.navigation ul {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+article {
+	min-height: 100%;
+	min-width: 60%;
+	margin: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#creative-navigation {
+	border-right: solid lightgray 2px;
+}
+
+#technical-navigation {
+	border-left: solid lightgray 2px;
+	right: 0;
+}
+
+.navigation li:hover {
+	cursor: pointer;
+}
+
+#creative-navigation li:hover {
+	color: darkgray;
+}
+
+#creative-navigation li:active {
+	color: lightgray;
+}
+
+#creative-item-blog {
+	display: initial;
+}
+
+#creative-item-writing {
+	display: none;
+}
+
+#creative-item-smithing {
+	display: none;
+}
+
+#creative-item-game-design {
+	display: none;
+}
+
+#technical-sidebar a {
+	color: white;
+}
+
+#technical-sidebar a:hover {
+	color: white;
+}
+
+#technical-item-led1 {
+	display: initial;
+}
+
+#technical-item-led2 {
+	display: none;
+}
+
+#technical-item-hololm {
+	display: none;
+}
+
+#technical-item-sydp3 {
+	display: none;
+}
+
+#technical-item-paradigm {
+	display: none;
+}
+
+#technical-item-website {
+	display: none;
+}
+
+#technical {
+	z-index: 10;
+	background-color: black;
+	left: 100%;
+	color: white;
+}
+
+.header {
+	font-size: 32pt;
+}
+
+.description {
+	max-width: 80%;
+	min-height: 200px;
+	font-size: 16pt;
+}
+
+.image {
+	border: solid cornflowerblue 5px;
+	padding: 20px;
+	margin: 20px 0px 20px 0px;
+	max-height: 550px;
+}
+
+@media only screen and (max-height: 1000px) {
+	.image {
+		max-height: 400px;
+	}
+}
+
+@media only screen and (max-width: 1399px) {
+	.image {
+		max-width: 600px;
+	}
+	
+	.description {
+		font-size: 14pt;
+	}
+}
+
+.technical-item {
+	text-align: right;
+}
+
+.float-right {
+	float: right;
+}
