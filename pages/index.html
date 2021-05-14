@@ -7,103 +7,15 @@
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" media="screen and (min-width: 1000px)" href="../css/landing.css">
 	<script src="../scripts/accentColorSwap.js" defer></script>
-	<script src="../scripts/landingNavigation.js" defer></script>
-	<script src="../scripts/landingItemSwap.js" defer></script>
 	<title>Jasper Rubin</title>
 </head>
 
 <body>
 	<main>
-		<section id="creative">
-
-			<nav class="navigation" id="creative-navigation">
-				<ul>
-					<li class="creative-title" id="creative-title-blog">Blog</li>
-					<li class="creative-title" id="creative-title-writing">Writing</li>
-					<li class="creative-title" id="creative-title-smithing">Smithing</li>
-					<li class="creative-title" id="creative-title-game-design">Game Design</li>
-				</ul>
-			</nav>
-
-			<article>
-				<div class="creative-item" id="creative-item-blog">
-					<h2 class="header">Blog</h2>
-					<img class="image" src="../images/BlogImage.png" alt="My Blog" title="My Blog">
-					<div class="description">
-						<p>
-							My blog started in 2015, when I was a misty-eyed high school freshman with dreams
-							of being a game developer, as a tool to try and force me to work more on
-							game design. It failed quite poorly at that, and quickly became a repository
-							of me explaining that I was terrible at getting things done, and a few thousand words
-							about Minecraft. Now it's where I write my thoughts on the world, when I find the time.
-							I rarely do.
-						</p>
-					</div>
-				</div>
-
-				<div class="creative-item" id="creative-item-writing">
-					<h2 class="header">Writing</h2>
-					<img class="image" src="../images/WritingImage.png" alt="Breathe" title="Breathe">
-					<div class="description">
-						<p>
-							I write stuff sometimes. I tried for a summer to actually complete writing projects
-							and failed, now they come and go as I have ideas, work on them for a week, then move
-							on to new things. The small list of things I have finished
-							<a href="filemissing.html">can be viewed here,</a>
-							if you are so inclined.
-						</p>
-					</div>
-				</div>
-
-				<div class="creative-item" id="creative-item-smithing">
-					<h2 class="header">Smithing</h2>
-					<img class="image" src="../images/SmithingImage.png" alt="Our first successfully forged tongs"
-						title="Our first successfully forged tongs">
-					<div class="description">
-						<p>
-							I have built and operated a series of small blacksmithing forges with friends.
-							They have invariably met with unfortunate fates, between component failure
-							(it turns out thrift store hairdryers don't take operation in direct sun and pouring rain
-							too well)
-							to collapse due to poor structural design, to one that burnt itself down.
-						</p>
-						<p>
-							Our next goal is to upgrade to propane, with the designs for the new forge
-							done in our heads, and so far failing to be something we are actually capable of building.
-						</p>
-					</div>
-				</div>
-
-				<div class="creative-item" id="creative-item-game-design">
-					<h2 class="header">Game Design</h2>
-					<img class="image" src="../images/GameDesignImage.png"
-						alt="Lumen, the only game I ever finished (and was proud of)"
-						title="Lumen, the only game I ever finished (and was proud of)">
-					<div class="description">
-						<p>
-							For many years my primary hobby was game development, with little success. My old game ideas
-							file has about 20 entries, with most having been at least started at some point, invaribly
-							with undue optimism. I used to compete in game jams (primarily Ludum Dare) back when I
-							was in high school and had free weekends. I hope to someday get back into it, once I don't
-							have as much calculus to contend with.
-						</p>
-					</div>
-				</div>
-
-			</article>
-
-			<div class="page-sidebar" id="creative-sidebar">
-				<a href="#home">
-					<h2 class="main-heading">Jasper Rubin <span class="domain-arrow">&rarr;</span></h2>
-					<a href="info.html">
-					</a>
-				</a>
-			</div>
-		</section>
 
 		<section id="home">
+			<img src="../images/JLOGO_BORDER.png" id="logo" class="accent-background-color">
 			<a href="info.html" target="_self" title="About Me" tabindex="1">
-				<img src="../images/JLOGO_BORDER.png" id="logo" class="accent-background-color">
 				<button id="about-me-link">About Me</button>
 			</a>
 
@@ -129,113 +41,14 @@
 				</div>
 			</div>
 		</section>
-
-		<section id="technical">
-
-			<div class="page-sidebar" id="technical-sidebar">
-				<a href="#home">
-					<h2 class="main-heading"><span class="domain-arrow">&larr;</span> Jasper Rubin</h2>
-					<a href="info.html">
-					</a>
-				</a>
-			</div>
-
-			<article>
-				<div class="technical-item" id="technical-item-led1">
-					<h2 class="header">LED Heartbeat v1</h2>
-					<img class="image" src="../images/LED1.png" alt="My first PCB" title="My first PCB">
-					<div class="description float-right">
-						<p>
-							Created as a Valentine's Day gift, my first foray into PCB design was simple. It combined an
-							ATTiny microcontroller, display driver, and LED matrix to present a red beating heart.
-							I still managed to take two revisions to get the routing right somehow.
-						</p>
-					</div>
-				</div>
-
-				<div class="technical-item" id="technical-item-led2">
-					<h2 class="header">LED Heartbeat v2</h2>
-					<img class="image" src="../images/LED1.png" alt="My first PCB" title="My first PCB">
-					<div class="description float-right">
-						<p>
-							I learned a lot in the year between this and my previous design. This one came complete
-							with a less capable microcontroller, no user input, and a more annoying battery. It has a
-							case though!
-						</p>
-					</div>
-				</div>
-
-				<div class="technical-item" id="technical-item-hololm">
-					<h2 class="header">HoloLM</h2>
-					<img class="image" src="../images/HoloLM.png" alt="Compact voltage regulator board"
-						title="Compact voltage regulator board">
-					<div class="description float-right">
-						<p>
-							For a long time I worked without a proper lab power supply. The reasonable solution would
-							have been to buy a cheap one on Amazon, or build one myself out of an old PC supply.
-							Naturally I chose to design a board instead that gives me very limited voltage range, no
-							current limiting, no power monitoring, and no effeciency. This is probably due for an
-							upgrade.
-						</p>
-					</div>
-				</div>
-
-				<div class="technical-item" id="technical-item-sydp3">
-					<h2 class="header">SydP3</h2>
-					<img class="image" src="../images/LED1.png" alt="My first PCB" title="My first PCB">
-					<div class="description float-right">
-						<p>
-							Filler.
-						</p>
-					</div>
-				</div>
-
-				<div class="technical-item" id="technical-item-paradigm">
-					<h2 class="header">Paradigm</h2>
-					<img class="image" src="../images/LED1.png" alt="My first PCB" title="My first PCB">
-					<div class="description float-right">
-						<p>
-							I joined
-							<a href="https://www.paradigmhyperloop.com" target="_blank"
-								title="Paradigm's Website">Paradgim</a> in my first year of university. After hanging
-							around and not doing much for a year, they decided to give me responsiblity for some reason.
-							I currently serve as the team's low-voltage lead for both our Hyperloop research and Tunnel
-							Boring Machine projects. I've learned a lot from working on the team, from board design and
-							system design to teamwork and project management.
-						</p>
-					</div>
-				</div>
-
-				<div class="technical-item" id="technical-item-website">
-					<h2 class="header">Website</h2>
-					<img class="image" src="../images/LED1.png" alt="My first PCB" title="My first PCB">
-					<div class="description float-right">
-						<p>
-							I'll be honest, I'm a lot more proud of this website than I should be. My introduction to
-							software was actually with HTML, reading an old library book from back when Perl was still
-							relevant. Despite it being my first contact with programming, it wasn't until this project
-							that I built something properly in HTML, CSS, and Javascript, or for the web at all for that
-							matter.
-						</p>
-					</div>
-				</div>
-			</article>
-
-			<nav class="navigation" id="technical-navigation">
-				<ul>
-					<li class="technical-title" id="technical-title-led1">LED Heartbeat v1</li>
-					<li class="technical-title" id="technical-title-led2">LED Heartbeat v2</li>
-					<li class="technical-title" id="technical-title-hololm">HoloLM</li>
-					<li class="technical-title" id="technical-title-sydp3">SydP3</li>
-					<li class="technical-title" id="technical-title-paradigm">Paradigm</li>
-					<li class="technical-title" id="technical-title-website">Website</li>
-				</ul>
-			</nav>
-
-		</section>
 	</main>
+
 	<footer class="accent-background-color">
-		<div>Built in pure HTML, CSS, and Javascript.</div>
+		<div>
+			<a href="https://github.com/Treeaza/jasper-rubin-website/" title="Github repo for this page" target="_blank"
+				class="hidden-link">Built in pure
+				HTML, CSS, and Javascript.</a>
+		</div>
 		<small>&copy;2020, Jasper Rubin. All rights reserved.</small>
 	</footer>
 </body>

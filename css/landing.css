@@ -78,7 +78,7 @@ h2 {
 	background-color: white;
 	background-image: url("../images/CreativeBackground.png");
 	background-image: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%,
-	rgba(255,255,255,0.9) 40%, rgba(255,255,255,0.6) 100%), url("../images/CreativeBackground.png");
+	rgba(255,255,255,0.9) 40%, rgba(255,255,255,0.7) 100%), url("../images/CreativeBackground.png");
 	background-position: right;
 	color: black;
 	padding-right: 120px;
@@ -114,7 +114,7 @@ ul {
 	background-color: black;
 	background-image: url("../images/TechnicalBackground.png");
 	background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%,
-	rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.6) 100%), url("../images/TechnicalBackground.png");
+	rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.7) 100%), url("../images/TechnicalBackground.png");
 	color: white;
 	padding-left: 120px;
 }
@@ -155,157 +155,6 @@ ul {
 	z-index: 1;
 }
 
-#creative {
-	z-index: 10;
-	display: flex;
-	flex-direction: row;
-	background-color: white;
-	left: -100%;
-}
-
-.page-sidebar {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: absolute;
-	width: 15%;
-	height: 100%;
-	text-align: center;
-	vertical-align: center;
-
-}
-
-#creative-sidebar {
-	right: 0;
-}
-
-#technical-sidebar {
-	left: 0;
-}
-
-#creative-sidebar a {
-	color: black;
-}
-
-#creative-sidebar a:hover {
-	color: black;
-}
-
-.navigation {
-	padding: 20px;
-	font-size: 16pt;
-	min-height: 100%;
-	max-height: 100%;
-	width: 10%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	text-align: center;
-}
-
-@media only screen and (max-width: 1200px) {
-	.navigation {
-		width: 15%;
-	}
-}
-
-.navigation ul {
-	padding: 0;
-	margin: 0;
-	height: 100%;
-	min-width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	text-align: center;
-}
-
-article {
-	min-height: 100%;
-	min-width: 60%;
-	margin: 100px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-#creative-navigation {
-	border-right: solid lightgray 2px;
-}
-
-#technical-navigation {
-	border-left: solid lightgray 2px;
-	right: 0;
-}
-
-.navigation li:hover {
-	cursor: pointer;
-}
-
-#creative-navigation li:hover {
-	color: darkgray;
-}
-
-#creative-navigation li:active {
-	color: lightgray;
-}
-
-#creative-item-blog {
-	display: initial;
-}
-
-#creative-item-writing {
-	display: none;
-}
-
-#creative-item-smithing {
-	display: none;
-}
-
-#creative-item-game-design {
-	display: none;
-}
-
-#technical-sidebar a {
-	color: white;
-}
-
-#technical-sidebar a:hover {
-	color: white;
-}
-
-#technical-item-led1 {
-	display: initial;
-}
-
-#technical-item-led2 {
-	display: none;
-}
-
-#technical-item-hololm {
-	display: none;
-}
-
-#technical-item-sydp3 {
-	display: none;
-}
-
-#technical-item-paradigm {
-	display: none;
-}
-
-#technical-item-website {
-	display: none;
-}
-
-#technical {
-	z-index: 10;
-	background-color: black;
-	left: 100%;
-	color: white;
-}
-
 .header {
 	font-size: 32pt;
 }
@@ -337,10 +186,6 @@ article {
 	.description {
 		font-size: 14pt;
 	}
-}
-
-.technical-item {
-	text-align: right;
 }
 
 .float-right {
