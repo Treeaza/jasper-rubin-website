@@ -1,7 +1,7 @@
 const ACCENT_ITEMS = document.querySelectorAll(".accent-background-color");
 const LOGO = document.querySelector("#logo");
 
-const COLORS = ["darkorange", "green", "blanchedalmond", "darkcyan", "crimson", "indigo", "maroon"];
+const COLORS = ["darkorange", "green", "blanchedalmond", "darkcyan", "crimson", "indigo", "maroon", "coral", "magenta", "peru", "navy", "gold"];
 
 const THRESHOLD = 3;
 
