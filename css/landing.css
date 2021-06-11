@@ -229,6 +229,7 @@ ul {
 }
 
 #creative li {
+	text-align: center;
 	position: relative;
 	transition: 0.5s;
 	left: 0px;
@@ -247,6 +248,7 @@ ul {
 
 #creative a:hover {
 	color: coral;
+	font-weight: bold;
 }
 
 #technical {
@@ -267,6 +269,7 @@ ul {
 }
 
 #technical li {
+	text-align: center;
 	position: relative;
 	transition-property: right;
 	transition-duration: 0.5s;
@@ -286,7 +289,8 @@ ul {
 }
 
 #technical a:hover {
-	color: coral;
+	color: purple;
+	font-weight: bold;
 }
 
 ul {
